@@ -1,5 +1,7 @@
 package kata 
 
+import "unicode"
+
 /*
 Reverse words
 
