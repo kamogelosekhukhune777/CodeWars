@@ -19,3 +19,4 @@ go.work
 
 main.go
 go.mod
+go.sum
