@@ -62,6 +62,13 @@ func SumOfIntervals(intervals [][2]int) int {
 	sum := 0
 	currentStart, currentEnd := intervals[0][0], intervals[0][1]
 
+	max := func(a, b int) int {
+		if a > b {
+			return a
+		}
+		return b
+	}
+
 	for i := 1; i < len(intervals); i++ {
 		nextStart, nextEnd := intervals[i][0], intervals[i][1]
 
@@ -82,9 +89,10 @@ func SumOfIntervals(intervals [][2]int) int {
 	return sum
 }
 
+/*
 func max(a, b int) int {
 	if a > b {
 		return a
 	}
 	return b
-}
+}*/
