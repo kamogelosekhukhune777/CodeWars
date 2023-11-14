@@ -1,11 +1,10 @@
 package kata
 
-
-
 /*
 strings ends with?
 
-Complete the solution so that it returns true if the first argument(string) passed in ends with the 2nd argument (also a string).
+Complete the solution so that it returns true if the first
+argument(string) passed in ends with the 2nd argument (also a string).
 
 Examples:
 
@@ -15,10 +14,10 @@ solution("abc", "d") // returns false
 
 func Solution(str, ending string) bool {
 	if len(str) < len(ending) {
-			return false
-		}
-	
-		end := str[len(str)-len(ending):]
-		return end == ending
-	  
+		return false
+	}
+	//save the last elements of str string with the number of charcters of ending
+	end := str[len(str)-len(ending):]
+	return end == ending
+
 }
