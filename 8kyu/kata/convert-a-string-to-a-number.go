@@ -24,11 +24,3 @@ func StringToNumber(str string) int {
 	return v
 
 }
-
-func stringToNumber(s string) (int, error) {
-	num, err := strconv.Atoi(s)
-	if err != nil {
-		return 0, err
-	}
-	return num, nil
-}
