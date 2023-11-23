@@ -31,7 +31,7 @@ s="aaaxbbbbyyhwawiwjjjwwm"
 printer_error(s) => "8/22"
 */
 
-func printerError(s string) string {
+func PrinterError(s string) string {
 	// Use a regular expression to match characters outside the range a-m
 	matches := regexp.MustCompile("[^a-m]").FindAllStringIndex(s, -1)
 	errorCount := len(matches)
